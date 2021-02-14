@@ -9,6 +9,8 @@ for (let i = 0; i < color1Length; i++) {
     selectedClass.addEventListener('click', e => {
         let color = selectedClass.attributes[1].value;
         drawingColor = color;
+        console.log(e)
+        console.log(selectedClass)
     })
 }
 
@@ -21,6 +23,9 @@ for (let i = 0; i < color2Length; i++) {
     selectedClass.addEventListener('click', e => {
         let color = selectedClass.attributes[1].value;
         drawingColor = color;
+        console.log(e)
+        console.log(selectedClass)
+        
     })
 }
 
@@ -36,6 +41,7 @@ for (let i = 0; i < penLength; i++) {
     let selectedClass = document.querySelectorAll('.pen1')[i];
     selectedClass.addEventListener('click', e => {
         let getPenSize = selectedClass.attributes[1].value;
+        selectedClass.classList.add("activePen");
         if (getPenSize == 0) {
             erageAll();
         } else penSize = getPenSize; // update pen size
