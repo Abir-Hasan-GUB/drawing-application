@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #f0f;
+}
+
+body {
+    background-color: #000;
+}
+
+.colorPlate {
+    height: 460px;
+    border: 5px solid rgb(0, 140, 255);
+    width: 100px;
+    border-right: none;
+    background: #fff;
+}
+
+.colorComponant {
+    padding: 5px;
+}
+
+#canvas {
+    border: 5px solid rgb(0, 140, 255);
+    background: #fff;
+}
+
+.container {
+    display: flex;
+    width: 700px;
+    /* border: 1px solid cyan; */
+    margin: 5% auto;
+}
+
+small {
+    text-align: center;
+    font-weight: 700;
+}
+
+.color1 {
+    height: 40px;
+    width: 45%;
+    float: left;
+    cursor: cell;
+}
+
+.color2 {
+    height: 40px;
+    width: 45%;
+    float: left;
+    margin-left: 8%;
+    cursor: cell;
+}
+
+.colorSet {
+    height: 60px;
+    width: 100%;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.darkBlue {
+    background-color: darkblue;
+}
+
+.darkViolet {
+    background-color: darkviolet;
+}
+
+.deepPink {
+    background-color: deeppink;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.green {
+    background-color: green;
+}
+
+.MediumSpringGreen {
+    background-color: mediumspringgreen;
+}
+
+h4{
+    color: cyan;
+    text-align: center;
+    margin-top: -4%;
+    word-spacing: 5px;
+    font-family: 'Pacifico', cursive;
+}
+.gitLink{
+    color: orangered;
+}
