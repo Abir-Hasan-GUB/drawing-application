@@ -1,7 +1,9 @@
 let color1Class = document.querySelectorAll('.color1');
 const color1Length = color1Class.length;
-let drawingColor = "black";
+let drawingColor = "black"; // initial pen lnk color
+let penSize = 1; // initial pen size
 
+// --------------- Add Event Listener to color Plate -------------------
 for (let i = 0; i < color1Length; i++) {
     let selectedClass = document.querySelectorAll('.color1')[i];
     selectedClass.addEventListener('click', e => {
@@ -10,6 +12,7 @@ for (let i = 0; i < color1Length; i++) {
     })
 }
 
+// --------------- Add Event Listener to color Plate -------------------
 let color2Class = document.querySelectorAll('.color2');
 const color2Length = color2Class.length;
 
@@ -18,6 +21,24 @@ for (let i = 0; i < color2Length; i++) {
     selectedClass.addEventListener('click', e => {
         let color = selectedClass.attributes[1].value;
         drawingColor = color;
+    })
+}
+
+// --------------- Add Event Listener to Pen Plate -------------------
+let penControl = document.querySelectorAll('.pen1');
+const penLength = penControl.length;
+
+function erageAll() {
+    context.clearRect(0, 0, canvas.width, canvas.height); // clean canva
+}
+
+for (let i = 0; i < penLength; i++) {
+    let selectedClass = document.querySelectorAll('.pen1')[i];
+    selectedClass.addEventListener('click', e => {
+        let getPenSize = selectedClass.attributes[1].value;
+        if (getPenSize == 0) {
+            erageAll();
+        } else penSize = getPenSize; // update pen size
     })
 }
 
@@ -34,7 +55,7 @@ canvas.addEventListener('mousedown', e => {
     drawing = true;
     oldX = e.offsetX;
     oldY = e.offsetY;
-    console.log(drawingColor)
+    context.lineWidth = penSize; // update drawing color
     context.strokeStyle = `${drawingColor}`;
 });
 
