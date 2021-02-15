@@ -2,13 +2,21 @@
 * {
     box-sizing: border-box;
 }
-
+.content{
+    width: 1140px;
+    margin: 0 auto;
+}
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     color: #f0f;
+    text-align: initial;
 }
-
+marquee{
+    margin-left: 11%;
+    margin-right: 14%;
+    text-align: initial;
+}
 body {
     background-color: #000;
 }
@@ -43,7 +51,7 @@ body {
     display: flex;
     width: 900px;
     /* border: 1px solid cyan; */
-    margin: 5% auto;
+    margin: 0 auto;
 }
 
 small {
@@ -122,9 +130,9 @@ small {
 }
 
 h4 {
+
     color: rgb(11, 192, 138);
     text-align: center;
-    margin-top: -4%;
     word-spacing: 5px;
     font-family: 'Pacifico', cursive;
 }
