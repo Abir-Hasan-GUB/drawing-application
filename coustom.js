@@ -30,6 +30,7 @@ const penLength = penControl.length;
 
 function erageAll() {
     context.clearRect(0, 0, canvas.width, canvas.height); // clean canva
+    penSize = 1;
 }
 
 for (let i = 0; i < penLength; i++) {
