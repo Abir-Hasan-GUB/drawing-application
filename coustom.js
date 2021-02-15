@@ -36,9 +36,19 @@ for (let i = 0; i < penLength; i++) {
     let selectedClass = document.querySelectorAll('.pen1')[i];
     selectedClass.addEventListener('click', e => {
         let getPenSize = selectedClass.attributes[1].value;
+        drawingColor = "black";
+        document.querySelector('canvas').style.cursor = "default"
+
         if (getPenSize == 0) {
             erageAll();
         } else penSize = getPenSize; // update pen size
+
+        // erage line by line using white color
+        if(getPenSize == 2) {
+            penSize = 12;
+            drawingColor = "white";
+            document.querySelector('canvas').style.cursor = "cell";
+        }
     })
 }
 
