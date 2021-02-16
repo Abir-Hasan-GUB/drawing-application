@@ -12,95 +12,101 @@
 </head>
 
 <body>
-<section class="content">
-    <marquee behavior="alternate" direction=""><h1>Welcome to Abir's Drawing Application'</h1></marquee>
-    <div class="container">
-        <div class="colorPlate">
-            <small>
-                <p>Click to Change</p>
-                <p>Color</p>
-            </small>
+    <section class="content">
+        <marquee behavior="alternate" direction="">
+            <h1>Welcome to Abir's Drawing Application'</h1>
+        </marquee>
+        <div class="container">
+            <div class="colorPlate">
+                <small>
+                    <p>Click to Change</p>
+                    <p>Color</p>
+                </small>
 
-            <!-- ========== Color Plate ======= -->
+                <!-- ========== Color Plate ======= -->
 
-            <div class="colorComponant">
-                <div class="colorSet">
-                    <div class="color1 aqua" name="aqua"></div>
-                    <div class="color2 brown" name="brown"></div>
+                <div class="colorComponant">
+                    <div class="colorSet">
+                        <div class="color1 aqua" name="aqua"></div>
+                        <div class="color2 brown" name="brown"></div>
+                    </div>
+
+                    <div class="colorSet">
+                        <div class="color1 blue" name="blue"></div>
+                        <div class="color2 red" name="red"></div>
+                    </div>
+
+                    <div class="colorSet">
+                        <div class="color1 black" name="black"></div>
+                        <div class="color2 cyan" name="cyan"></div>
+                    </div>
+
+                    <div class="colorSet">
+                        <div class="color1 darkBlue" name="darkblue"></div>
+                        <div class="color2 darkViolet" name="darkviolet"></div>
+                    </div>
+
+                    <div class="colorSet">
+                        <div class="color1 deepPink" name="deeppink"></div>
+                        <div class="color2 magenta" name="magenta"></div>
+                    </div>
+
+                    <div class="colorSet">
+                        <div class="color1 MediumSpringGreen" name="MediumSpringGreen"></div>
+                        <div class="color2 green" name="green"></div>
+                    </div>
+                    <div class="colorSet">
+                        <div class="color1 yellow" name="orange"></div>
+                        <div class="color2 darkorange" name="darkorange"></div>
+                    </div>
                 </div>
 
-                <div class="colorSet">
-                    <div class="color1 blue" name="blue"></div>
-                    <div class="color2 red" name="red"></div>
-                </div>
-
-                <div class="colorSet">
-                    <div class="color1 black" name="black"></div>
-                    <div class="color2 cyan" name="cyan"></div>
-                </div>
-
-                <div class="colorSet">
-                    <div class="color1 darkBlue" name="darkblue"></div>
-                    <div class="color2 darkViolet" name="darkviolet"></div>
-                </div>
-
-                <div class="colorSet">
-                    <div class="color1 deepPink" name="deeppink"></div>
-                    <div class="color2 magenta" name="magenta"></div>
-                </div>
-
-                <div class="colorSet">
-                    <div class="color1 MediumSpringGreen" name="MediumSpringGreen"></div>
-                    <div class="color2 green" name="green"></div>
-                </div>
             </div>
 
+            <!-- ========================= Canvas Board ================= -->
+            <div class="main">
+                <canvas id="canvas" height="460px" width="700px"></canvas>
+            </div>
+
+            <!-- ======================== Pen Plate ================= -->
+            <div class="penPlate">
+                <small>
+                    <p>Pen</p>
+                </small>
+
+                <div class="pen1" name="1">
+                    <img src="images/pen1.png" alt="pen">
+                    <small>1</small>
+                </div>
+                <div class="pen1" name="3">
+                    <img src="images/pen2.png" alt="pen">
+                    <small>3</small>
+                </div>
+                <div class="pen1" name="5">
+                    <img src="images/pen3.png" alt="pen">
+                    <small>5</small>
+                </div>
+                <div class="pen1" name="9">
+                    <img src="images/pen4.png" alt="pen">
+                    <small>9</small>
+                </div>
+                <div class="pen1 erager cleanLineWise" name="2">
+                    <img src="images/eraser.png" alt="eraser">
+                </div>
+                <div class="pen1 erager cleanAll" name="0">
+                    <small>Clean All</small>
+                </div>
+
+            </div>
+
+            <!-- ========================= Copyright ================== -->
         </div>
-
-        <!-- ========================= Canvas Board ================= -->
-        <div class="main">
-            <canvas id="canvas" height="460px" width="700px"></canvas>
-        </div>
-
-        <!-- ======================== Pen Plate ================= -->
-        <div class="penPlate">
-            <small>
-                <p>Pen</p>
-            </small>
-
-            <div class="pen1" name="1">
-                <img src="images/pen1.png" alt="pen">
-                <small>1</small>
-            </div>
-            <div class="pen1" name="3">
-                <img src="images/pen2.png" alt="pen">
-                <small>3</small>
-            </div>
-            <div class="pen1" name="5">
-                <img src="images/pen3.png" alt="pen">
-                <small>5</small>
-            </div>
-            <div class="pen1" name="9">
-                <img src="images/pen4.png" alt="pen">
-                <small>9</small>
-            </div>
-            <div class="pen1 erager cleanLineWise" name="2">
-                <img src="images/eraser.png" alt="eraser">
-            </div>
-            <div class="pen1 erager cleanAll" name="0">
-                <small>Clean All</small>
-            </div>
-
-        </div>
-
-        <!-- ========================= Copyright ================== -->
-    </div>
-    <h4>&copy; Copyright: <a class="gitLink" href="https://github.com/Abir-Hasan-GUB"> Abir Hasan</a></h4>
+        <h4>&copy; Copyright: <a class="gitLink" href="https://github.com/Abir-Hasan-GUB"> Abir Hasan</a></h4>
 
 
 
-    <Script src="coustom.js"></Script>
-</section>
+        <Script src="coustom.js"></Script>
+    </section>
 </body>
 
 </html>

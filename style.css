@@ -2,21 +2,25 @@
 * {
     box-sizing: border-box;
 }
-.content{
+
+.content {
     width: 1140px;
     margin: 0 auto;
 }
+
 h1 {
     text-align: center;
     font-size: 30px;
     color: #f0f;
     text-align: initial;
 }
-marquee{
+
+marquee {
     margin-left: 11%;
     margin-right: 14%;
     text-align: initial;
 }
+
 body {
     background-color: #000;
 }
@@ -27,14 +31,14 @@ body {
     border: 5px solid rgb(0, 140, 255);
     width: 100px;
     border-right: none;
-    background: #fff;
+    background: rgb(212, 212, 212);
 }
 
 .penPlate {
     height: 470px;
     border: 5px solid rgb(0, 140, 255);
     width: 50px;
-    background: #fff;
+    background: rgb(212, 212, 212);
     border-left: none;
 }
 
@@ -77,7 +81,7 @@ small {
 }
 
 .colorSet {
-    height: 60px;
+    height: 55px;
     width: 100%;
 }
 
@@ -129,6 +133,14 @@ small {
     background-color: mediumspringgreen;
 }
 
+.darkorange {
+    background: orange;
+}
+
+.yellow {
+    background: yellow;
+}
+
 h4 {
 
     color: rgb(11, 192, 138);
@@ -160,13 +172,14 @@ h4 {
     -o-transition: .3s;
     cursor: cell;
 }
-.cleanAll{
+
+.cleanAll {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
 }
 
-.activePen{
+.activePen {
     background: lightgreen;
 }
 
