@@ -1,7 +1,13 @@
 let color1Class = document.querySelectorAll('.color1');
 const color1Length = color1Class.length;
+let colorPicker = document.querySelector('.colorPicker');
 let drawingColor = "black"; // initial pen lnk color
 let penSize = 1; // initial pen size
+
+// handle color picker
+colorPicker.addEventListener('input', e => {
+    drawingColor = e.target.value;
+});
 
 // --------------- Add Event Listener to color Plate -------------------
 for (let i = 0; i < color1Length; i++) {
@@ -45,7 +51,7 @@ for (let i = 0; i < penLength; i++) {
         } else penSize = getPenSize; // update pen size
 
         // erage line by line using white color
-        if(getPenSize == 2) {
+        if (getPenSize == 2) {
             penSize = 12;
             drawingColor = "white";
             document.querySelector('canvas').style.cursor = "cell";
